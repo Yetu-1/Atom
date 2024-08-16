@@ -1,0 +1,24 @@
+.Form {
+    width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Logo h1 {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#link-login {
+    font-size: large;
+    color: gray;
+}
+
+#link-login h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.link {
+  text-decoration: none;
+}

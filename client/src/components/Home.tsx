@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
-import { Button, Row, Stack } from 'react-bootstrap';
+import { Button, Container, Row, Stack } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
+import { NavBar } from './NavBar';
 
 type User = {
     user_id: string
@@ -29,30 +30,11 @@ export function Home() {
     }, []);
 
     return (
-        <Stack gap={4} >
-            <Stack direction="horizontal" gap={2} className="justify-content-between">
-                <h1>Users</h1>
-                <Link to="/register">
-                    <Button variant="primary">ADD USER</Button>
-                </Link>
-            </Stack>
-            <div className="App">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Name</th>
-                            <th>Balance(₦)</th>
-                        </tr>
-                        {users.map((val, key) => {
-                            return (
-                                <tr key={key}>
-                                    <td>{val.username}</td>
-                                    <td>{val.balance}</td>
-                                </tr>
-                            )
-                        })}
-                    </tbody>
-                </table>
+        <Stack gap={4} direction='horizontal'>
+            <NavBar />
+
+            <div>
+          
             </div>
         </Stack>
     );
